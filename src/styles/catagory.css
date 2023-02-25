@@ -1,0 +1,23 @@
+.catagory__item{
+  background: #fde4e4;
+  padding: 30px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.catagory__item:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.212);
+}
+@media only screen and (max-width:768px){
+  .catagory__item{
+    padding: 20px 15px;
+  }
+  .catagory__img img{
+    width: 40px;
+    height: 40px;
+  }
+  .catagory__item h6{
+    font-size: 0.8rem;
+  }
+}
