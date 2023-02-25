@@ -12,15 +12,14 @@ import Register from '../pages/Register'
 const Routers = () => {
   return (
     <Routes>
-      <Route path='/tasty' element={<Navigate to={'/tasty/home'} />} />
-      <Route path='/tasty/home' element={<Home />} />
-      <Route path='/tasty/foods' element={<AllFoods />} />
-      <Route path='/tasty/foods/:id' element={<FoodDetails />} />
-      <Route path='/tasty/cart' element={<Cart />} />
-      <Route path='/tasty/checkout' element={<Checkout />} />
-      <Route path='/tasty/login' element={<Login />} />
-      <Route path='/tasty/register' element={<Register />} />
-      <Route path='/tasty/contact' element={<Contact />} />
+      <Route path='/' element={<Home />} />
+      <Route path='/foods' element={<AllFoods />} />
+      <Route path='/foods/:id' element={<FoodDetails />} />
+      <Route path='/cart' element={<Cart />} />
+      <Route path='/checkout' element={<Checkout />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/contact' element={<Contact />} />
     </Routes>
   )
 }
